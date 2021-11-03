@@ -23,7 +23,7 @@ Not support for iphone,because this feature implemented by Apple,Inc.
 - When we got the content from server, we write it to android clipboard
 - Now,we can paste on Android devices!
 
-# Future Plan?
+# Future Plan
 
 - copy from android,paste on Mac.
 
@@ -48,6 +48,6 @@ Not support for iphone,because this feature implemented by Apple,Inc.
     - 当我们从服务器获取内容时，我们将其写入android剪贴板
 - 现在，我们可以在Android设备上粘贴了！
 
-# 未来计划？
+# 未来计划
 
 - 从android复制，粘贴到Mac上。
