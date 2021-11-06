@@ -6,7 +6,7 @@ over cross Internet.
 Not support for iphone,because this feature implemented by Apple,Inc.
 
 # 2. How to use?
-## 2.1. Start A Server
+## 2.1. Server Settings
 You need Python3 Environment,and
 
 `pip3 install copy2android`
@@ -28,7 +28,7 @@ ps:M2A means Mac To Android.
 - [download app](http://www.baidu.com)
 - 
 
-# How it works?
+# How it works?xk
 
 - Firstly,we need monitor the `command + c`,and get the content.
 
