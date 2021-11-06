@@ -12,17 +12,11 @@ from websocket_server import WebsocketServer
 
 
 class Data:
+    """
+    用来记录按键按下的是Command + C
+    """
     first = False
     second = False
-
-
-def new_client(client, server):
-    print("new client joined:" + client)
-    clients.append(client)
-
-
-def received(client, server, message):
-    print(message)
 
 
 def get_host_ip():
@@ -40,14 +34,10 @@ def get_host_ip():
     return ip
 
 
-data = Data()
-clients = []
-server = WebsocketServer(host=get_host_ip(), port=random.randrange(1025, 65535), loglevel=logging.INFO)
-server.set_fn_new_client(new_client)
-server.set_fn_message_received(received)
-
-
 def getClipboardData():
+    """
+    获取剪切板数据
+    """
     p = subprocess.Popen(['pbpaste'], stdout=subprocess.PIPE)
     retcode = p.wait()
     data = p.stdout.read()
@@ -59,6 +49,9 @@ def on_press(key):
 
 
 def on_release(key):
+    """
+    按键释放回调
+    """
     if '{0}'.format(key).lower() == '\'c\'':
         data.first = True
     if '{0}'.format(key) == 'Key.cmd':
@@ -86,6 +79,9 @@ def printServerAddress():
 
 
 def copy():
+    """
+    监听用户按键
+    """
     while True:
         with keyboard.Listener(
                 on_press=on_press,
@@ -93,10 +89,35 @@ def copy():
             listener.join()
 
 
+def new_client(client, server):
+    """
+    有新客户端加入回调
+    :param client: 客户端
+    :param server: 当前server
+    :return: null
+    """
+    print("new client joined:" + client)
+
+
+def received(client, server, message):
+    """
+    服务端收到客户端的消息回调
+    """
+    print(message)
+
+
 def web():
+    """
+    开启WebSocket Server
+    """
     printServerAddress()
     server.run_forever()
 
+
+data = Data()
+server = WebsocketServer(host=get_host_ip(), port=random.randrange(1025, 65535), loglevel=logging.INFO)
+server.set_fn_new_client(new_client)
+server.set_fn_message_received(received)
 
 if __name__ == '__main__':
     t1 = threading.Thread(target=copy, name='copy')
