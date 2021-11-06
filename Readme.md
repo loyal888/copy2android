@@ -17,8 +17,11 @@ from copy2android import M2A as M
 
 M.start()
 ```
-PS:M2A means Mac To Android.
+ps:M2A means Mac To Android.
+
+
  You will See Console Like This:
+
 ![](img/2379b79d.png)
 
 ## 2.2 App Settings
