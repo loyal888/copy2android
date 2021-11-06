@@ -1,13 +1,29 @@
-# Introduce
+# 1. Introduce
 
 **This project,support you copy from Mac,and paste it on Android.**  The data only support LAN,not
 over cross Internet.
 
 Not support for iphone,because this feature implemented by Apple,Inc.
 
-# How to use?
+# 2. How to use?
+## 2.1. Start A Server
+You need Python3 Environment,and
 
-//TODO
+`pip3 install copy2android`
+
+Then Run:
+```
+from copy2android import M2A as M
+
+M.start()
+```
+PS:M2A means Mac To Android.
+ You will See Console Like This:
+![](img/2379b79d.png)
+
+## 2.2 App Settings
+- [download app](http://www.baidu.com)
+- 
 
 # How it works?
 
