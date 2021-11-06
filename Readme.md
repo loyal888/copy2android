@@ -11,7 +11,7 @@ You need Python3 Environment,and
 
 `pip3 install copy2android`
 
-Then Run:
+Then Run Python Script:
 ```
 from copy2android import M2A as M
 
