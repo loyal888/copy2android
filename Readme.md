@@ -20,9 +20,7 @@ M.start()
 ps:M2A means Mac To Android.
 
 
- You will See Console Like This:
-
-![](img/1f2f9738.png)
+ You will See QR Code On your Screen
 
 ## 2.2 App Settings
 - [download app](http://www.baidu.com)
