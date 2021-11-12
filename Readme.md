@@ -23,10 +23,12 @@ ps:M2A means Mac To Android.
  You will See QR Code On your Screen
 
 ## 2.2 App Settings
-- [download app](http://www.baidu.com)
-- 
+- [download app](https://raw.githubusercontent.com/loyal888/copy2android/master/android/app-release.apk)
 
-# How it works?xk
+## 2.3 Install App and Scan QRCode
+Have Fun.
+
+# How it works?
 
 - Firstly,we need monitor the `command + c`,and get the content.
 
