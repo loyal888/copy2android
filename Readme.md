@@ -22,7 +22,7 @@ ps:M2A means Mac To Android.
 
  You will See Console Like This:
 
-![](img/2379b79d.png)
+![](img/1f2f9738.png)
 
 ## 2.2 App Settings
 - [download app](http://www.baidu.com)
