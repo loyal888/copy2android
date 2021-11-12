@@ -4,6 +4,7 @@
 over cross Internet.
 
 Not support for iphone,because this feature implemented by Apple,Inc.
+![](./img/sample.gif)
 
 # 2. How to use?
 ## 2.1. Server Settings
